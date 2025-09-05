@@ -29,6 +29,13 @@ border: 3px solid #000000;
 
 }
 
+.nav-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .nav-bar-items{
 
 /* Frame 11 */
@@ -94,3 +101,133 @@ order: 0;
 flex-grow: 0;
 
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@900&display=swap');
+
+.main-text {
+  position: relative;
+  width: 1353px;
+  height: 543px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 38px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background: #fff; /* якщо потрібен фон */
+}
+
+.big-title {
+  width: 703px;
+  height: 64px;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 80px;
+  text-align: center;
+  color: #E67723;
+  margin: 0;
+}
+
+.subtitle {
+  width: 703px;
+  height: 50px;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  color: #000;
+  margin: 0;
+}
+
+.description {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 72.38%;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  color: #B7B7B7;
+  margin: 0;
+}
+
+/* Стилі для блоку статистики */
+.our-statistics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.our-statistics-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Іконки різних кольорів */
+.stat-icon.user {
+  background: #76DD7C;
+}
+.stat-icon.products {
+  background: #A4D0F6;
+}
+.stat-icon.economy {
+  background: #FFD36E;
+}
+
+.stat-value {
+  font-family: 'Abyssinica SIL', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 8px 0;
+  text-align: center;
+}
+
+.stat-title {
+  font-family: 'Abyssinica SIL', serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  margin: 0 0 4px 0;
+  text-align: center;
+}
+
+.stat-desc {
+  font-family: 'Abyssinica SIL', serif;
+  font-size: 14px;
+  color: #949393;
+  margin: 0;
+  text-align: center;
+}
+
+/* Підключення шрифту Abyssinica SIL */
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap');
