@@ -402,8 +402,9 @@ flex-grow: 0;
 }
 
 .product:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Фото товару */
@@ -433,6 +434,11 @@ flex-grow: 0;
   line-height: 1.2;
 }
 
+.product-name:hover {
+  color: #FF7700;
+  transition: color 0.3s ease;
+}
+
 /* Магазин + ціна */
 .product-dropdown {
   display: flex;
@@ -460,4 +466,48 @@ flex-grow: 0;
   background-color: #fff3e6;
   padding: 0.3rem 1rem;
   border-radius: 10px;
+}
+
+.product-price:hover {
+  background-color: #FFE0B2;
+  transition: background-color 0.3s ease;
+}
+
+/* Ефекти при наведенні */
+
+.nav-item:hover {
+  color: #ada49e;
+  text-decoration: underline;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.nav-icon:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  filter: brightness(1.2);
+  transition: filter 0.3s ease;
+}
+
+.big-title:hover {
+  color: #E67723;
+  transition: color 0.3s ease;
+}
+
+.subtitle:hover {
+  color: #E67723;
+  transition: color 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-button:hover {
+  background: #E67723;
+  transition: transform 0.3s ease;
 }
