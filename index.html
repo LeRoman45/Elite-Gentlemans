@@ -9,9 +9,9 @@
     <div class = 'nav-bar'>
       <img class="logo" src = 'logo.jpg'>
       <div class = 'nav-bar-items'>
-        <p class = 'nav-item'>Магазин</p>
-        <p class = 'nav-item'>Про нас</p>
-        <p class = 'nav-item'>Відгуки</p>
+         <a class="nav-item" href="#shop">Магазин</a>
+        <a class="nav-item" href="#about">Про нас</a>
+        <a class="nav-item" href="#reviews">Відгуки</a>
         <span class="nav-icon">
           <svg width="32" height="32" viewBox="0 0 32 32">
             <circle cx="14" cy="14" r="10" stroke="#000" stroke-width="2" fill="none"/>
@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <div class="main-text">
+    <div class="main-text" id="about">
       <p class="big-title">Порівняння цін</p>
       <p class="subtitle">У Місті Жовква</p>
       <p class="description">Знаходьте найкращі ціни на продукти в магазинах АТБ, Рукавичка та Мирослава. Економте час і гроші з нашим безкоштовним сервісом порівняння цін.</p>
@@ -103,7 +103,7 @@
         </div>
     
         <!-- Кнопка пошуку -->
-        <div class="search-button">
+        <div class="search-button" id="search">
           <svg width="19" height="19" viewBox="0 0 32 32" fill="none">
             <circle cx="14" cy="14" r="10" stroke="#fff" stroke-width="2"/>
             <line x1="22" y1="22" x2="30" y2="30" stroke="#fff" stroke-width="2"/>
@@ -114,44 +114,64 @@
     </div>
 
     <div class="products-line">
-      <div class = 'product'>
-        <img class="product-photo" src = 'zhivchik.png'>
-        <div class = "product-item">
-          <p class = 'product-name'>Живчик</p>
-          <div class="product-dropdown">
-            <p class = 'product-shop'>АТБ</p>
-            <img src = "Vector.svg" class="arrow"> 
-            </div>
-            <p class = 'product-price'>35.99</p>
-          </div>
-          
+  <!-- Живчик -->
+  <div class="product">
+    <img class="product-photo" src="zhivchik.png" alt="Живчик">
+    <div class="product-item">
+      <p class="product-name">Живчик</p>
+
+      <div class="product-dropdown custom-dropdown" data-product="zhivchik">
+        <button class="dropdown-btn">АТБ</button>
+        <div class="dropdown-content">
+          <p data-shop="АТБ">АТБ</p>
+          <p data-shop="Рукавичка">Рукавичка</p>
+          <p data-shop="Мирослава">Мирослава</p>
         </div>
-        <div class = 'product'>
-          <img class="product-photo" src = 'revo.png'>
-          <div class = "product-item">
-            <p class = 'product-name'>Рево</p>
-            <div class="product-dropdown">
-              <p class = 'product-shop'>АТБ</p>
-              <img src = "Vector.svg" class="arrow"> 
-              </div>
-              <p class = 'product-price'>50</p>
-            </div>
-            
-          </div>
-          <div class = 'product'>
-            <img class="product-photo" src = 'mirinda.png'>
-            <div class = "product-item">
-              <p class = 'product-name'>Мірінда</p>
-              <div class="product-dropdown">
-                <p class = 'product-shop'>АТБ</p>
-                <img src = "Vector.svg" class="arrow"> 
-                </div>
-                <p class = 'product-price'>30</p>
-              </div>
-              
-            </div>
-         
+      </div>
+
+      <p class="product-price" id="zhivchik-price">35.99 грн</p>
     </div>
-      
+  </div>
+
+  <!-- Рево -->
+  <div class="product">
+    <img class="product-photo" src="revo.png" alt="Рево">
+    <div class="product-item">
+      <p class="product-name">Рево</p>
+
+      <div class="product-dropdown custom-dropdown" data-product="revo">
+        <button class="dropdown-btn">АТБ</button>
+        <div class="dropdown-content">
+          <p data-shop="АТБ">АТБ</p>
+          <p data-shop="Рукавичка">Рукавичка</p>
+          <p data-shop="Мирослава">Мирослава</p>
+        </div>
+      </div>
+
+      <p class="product-price" id="revo-price">50 грн</p>
+    </div>
+  </div>
+</div>
+
+
+  <div class="product">
+    <img class="product-photo" src="mirinda.png">
+    <div class="product-item">
+      <p class="product-name">Мірінда</p>
+      <div class="product-dropdown custom-dropdown" data-product="mirinda">
+  <button class="dropdown-btn">АТБ</button>
+  <div class="dropdown-content">
+    <p data-shop="АТБ">АТБ</p>
+    <p data-shop="Рукавичка">Рукавичка</p>
+    <p data-shop="Мирослава">Мирослава</p>
+  </div>
+</div>
+<p class="product-price" id="zhivchik-price">35.99 грн</p>
+  </div>
+    </div>
+  </div>
+</div>
+
+    <script src="script.js"></script>
   </body>
 </html>
